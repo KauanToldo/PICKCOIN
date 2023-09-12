@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PICKCOIN</title>
+</head>
+<body>
+    <div id="home">
+        <header>
+            <button class="fechado" id="music"><span id="music-icon" class='material-symbols-outlined ligado'>music_note</span></button>
+            <button class="fechado" id="sound"><i class="fa-solid fa-volume-high"></i></button>
+            <button id="loja"><i class="fa-solid fa-shop"></i></button>
+            <button id="config"><i class="fa-solid fa-gear"></i></button>
+        </header>
+        <main>
+            <h1 id="title">PICKC<img src="img/bitcoin_icon.png">IN</h1>
+            <div>
+                <button id="play" href="#game">JOGAR</button>
+            </div>
+        </main>
+    </div>
+    <div id="game-container">
+        <div id="sky"></div>
+        <div id="game">
+            <div id="pause-modal">
+                <h1 id="title-pause">PICKC<img src="img/bitcoin_icon.png">IN</h1>
+                <div id="buttons">
+                    <button id="continuar">CONTINUAR</button>
+                    <button id="desistir">DESISTIR</button>
+                </div>
+                <div id="config-container-pause">
+                    <button id="config-pause"><i class="fa-solid fa-gear"></i></button>
+                    <button class="fechadoPause" id="music-pause"><span id="music-icon-pause" class='material-symbols-outlined ligado-pause'>music_note</span></button>
+                    <button class="fechadoPause" id="sound-pause"><i class="fa-solid fa-volume-high"></i></button>
+                </div>
+                <p id="desc">Todos os direitos reservados, 2023. Pi IFC</p>
+            </div>
+            <div id="top-bar">
+                <div id="criptocoins">
+                    <div id="bitcoin">
+                        <img src="img/criptocoins/bitcoin.svg" alt="">
+                        <p class="qtd">00</p>
+                    </div>
+                    <div id="ethereum">
+                        <img src="img/criptocoins/ethereum.svg" alt="">
+                        <p class="qtd">00</p>
+                    </div>
+                    <div id="tether">
+                        <img src="img/criptocoins/tether.svg" alt="">
+                        <p class="qtd">00</p>
+                    </div>
+                    <div id="binance">
+                        <img src="img/criptocoins/binance.svg" alt="">
+                        <p class="qtd">00</p>
+                    </div>
+                </div>
+                <button id="pause" ><i class="fa-solid fa-pause"></i></button>
+            </div>
+            <img id="wallet" src="img/wallet.svg" alt="">
+            <div id="contagem"></div>
+            <div id="chao"><i id="dica-arrow" class="fa-solid fa-arrows-up-down"></i></div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
